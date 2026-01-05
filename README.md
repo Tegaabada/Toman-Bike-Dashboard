@@ -70,10 +70,10 @@ FROM
   ON a.yr = b.yr;
 ```
 ### Power BI
-<img src="Toman Dashboard.png" alt="Toamn Bikes dashboard overview">
+<img src="images/Toman Dashboard.png" alt="Toman Bikes dashboard overview">
 
 ### Calculated Measures
-<img src="Toman Tables.png" alt="Toamn Bikes dashboard overview">
+<img src="images/Toman Tables.png" alt="Calculated Measures">
 
 More exploratory analysis was done in Power BI using DAX to generate calculated measures such as:
 - Price Increase:

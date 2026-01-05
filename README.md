@@ -2,8 +2,8 @@
 Sales KPI Analysis
 ## Project Overview
 
-**Project Title**: Toman Bikes Sales KPI Analysis. 
-**Database**:`Toman_Data`
+**Project Title**: Toman Bikes Sales KPI Analysis. <br>
+**Database**:`Toman_Data` <br>
 **Tech Stack**: ![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white), ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
 
 

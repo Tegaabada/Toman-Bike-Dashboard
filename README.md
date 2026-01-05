@@ -4,25 +4,26 @@ Sales KPI Analysis
 
 **Project Title**: Toman Bikes Sales KPI Analysis. <br>
 **Database**:`Toman_Data` <br>
+
 **Tech Stack**: ![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white), ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
 
 
-This project is designed to demonstrate SQL skills and techniques typically used by data analysts to explore, clean, and analyze employee data. The project involves setting up employee tables on an SQL database, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries.
+This project showcases the use of SQL and Power BI to design and develop an interactive dashboard for Toman Bike Share. It involves creating or accessing a bike‑share database, analyzing hourly revenue, seasonal profit trends, and rider demographics, and presenting these insights through a user‑friendly, brand‑aligned dashboard. The work supports data‑driven decision‑making and includes recommendations on pricing strategy for the upcoming year.
 
 ## Objectives
 
-1. **Set up a database**: Populate a database with the provided employee data.
-2. **Data Cleaning**: Identify and remove any records with missing or null values.
+1. **Set up a database**: Populate a database with the provided Toman BIke Sales data.
+2. **Data Cleaning**: Perform necessary data cleaning practises such as: Identifying and removing any records with null values and using the proper datatypes.
 3. **Exploratory Data Analysis (EDA)**: Perform basic exploratory data analysis to understand the dataset.
-4. **Business Analysis**: Use SQL to answer specific business questions and derive insights from the dataset.
+4. **Business Analysis**: Use SQL and DAX to answer specific business questions and derive insights from the dataset.
 
 ## Project Structure
 
 ### 1. Database Setup
 
 - **Database Set up**: The project starts by setting up on an existing database created with this code
-  ``` CREATE DATABASE [SQL_DB]; ```
-- **Table Creation**: The tables, ```[Employee Info]``` and ```[Employee position2]``` were imported via ETL pipeline.
+  ``` CREATE DATABASE [Toman_Data]; ```
+- **Table Creation**: The tables, ```[Employee Info]``` and ```[Employee position2]``` were imported into the SQL server.
 
 
 ### 2. Data Cleaning

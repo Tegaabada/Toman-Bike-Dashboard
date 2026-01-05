@@ -78,12 +78,7 @@ FROM (SELECT TOP 2 Salary
     FROM [dbo].[Employee position2]
     ORDER BY Salary ASC) AS MinSalaries
 
-UNION
 
-SELECT Salary
-FROM (SELECT TOP 2 Salary
-    FROM [dbo].[Employee position2]
-    ORDER BY Salary DESC) AS MaxSalaries;
 ```
 
 ## Findings

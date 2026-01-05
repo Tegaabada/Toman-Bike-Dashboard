@@ -26,10 +26,7 @@ This project showcases the use of SQL and Power BI to design and develop an inte
 
 ## Analysis
 
-### SQL Setup
-<img src="Toman Dashboard.png.png" alt="Toamn Bikes dashboard overview">
-
-### 1. Database
+### 1. SQL Database Setup
 
 - **Database Set up**: The project starts by setting up on a database.
 - **Table Creation**: The tables, were imported into the SQL server.
@@ -73,10 +70,15 @@ FROM
   ON a.yr = b.yr;
 ```
 ### Power BI
+<img src="Toman Dashboard.png" alt="Toamn Bikes dashboard overview">
 
 ### Calculated Measures
+<img src="Toman Tables.png" alt="Toamn Bikes dashboard overview">
 
-More exploratory analysis was done in Power BI using DAX to generate calculated measures 
+More exploratory analysis was done in Power BI using DAX to generate calculated measures such as:
+- Price Increase:
+- Demand Increase:
+- Price Elasticity:
 
 
 ## Key Insights

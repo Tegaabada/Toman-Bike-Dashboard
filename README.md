@@ -10,6 +10,13 @@ Sales KPI Analysis
 
 This project showcases the use of SQL and Power BI to design and develop an interactive dashboard for Toman Bike Share. It involves creating or accessing a bike‑share database, analyzing hourly revenue, seasonal profit trends, and rider demographics, and presenting these insights through a user‑friendly, brand‑aligned dashboard. The work supports data‑driven decision‑making and includes recommendations on pricing strategy for the upcoming year.
 
+##Outline
+-	Objectives
+-	Analysis
+-	Key Insights
+-	Recommendations
+-	Conclusion
+
 ## Objectives
 
 1. **Set up a database**: Populate a database with the provided Toman Bike Sales data.
@@ -17,9 +24,12 @@ This project showcases the use of SQL and Power BI to design and develop an inte
 3. **Exploratory Data Analysis (EDA)**: Perform basic exploratory data analysis to understand the dataset.
 4. **Business Analysis**: Use SQL and DAX to answer specific business questions and derive insights from the dataset.
 
-## Project Structure
+## Analysis
 
-### 1. Database Setup
+### SQL Setup
+<img src="Toman Dashboard.png.png" alt="Toamn Bikes dashboard overview">
+
+### 1. Database
 
 - **Database Set up**: The project starts by setting up on a database.
 - **Table Creation**: The tables, were imported into the SQL server.
@@ -30,31 +40,46 @@ This project showcases the use of SQL and Power BI to design and develop an inte
 - **Null Value Check**: View tables and check for any null values in the dataset and delete records with missing data.
 - **Datatype Check**: View tables and check datatype and alter columns with wrong datatypes.
 
-### 3. Exploratory Data Analysis & Findings
+### 3. Exploratory Data Analysis
 
-The following SQL queries were developed to answer specific business questions:
+SQL queries were developed to answer specific business questions. 
 
--- Q1: Write a query to fetch the EmpFname from the EmployeeInfo table in the upper case and use the ALIAS name as EmpName.
+-- Query written using a Common Table Expression (CTE) to join table and get the revenue and profit:
+
 ```sql
-SELECT UPPER(EmpFname) AS [EmpName]
-FROM [Employee Info];
-```
--- Q2: Write a query to fetch the number of employees working in the department ‘HR’.
-```sql
-SELECT COUNT (*) AS [Employee Count]
-from [dbo].[Employee Info]
-WHERE [Department] = 'HR';
-```
+WITH cte_table as (
+SELECT *
+  FROM bike_share_yr_0
+UNION
+SELECT *
+  FROM bike_share_yr_1)
 
--- Q20: Write a query to retrieve two minimum and maximum salaries from the EmployeePosition table
-```sql
-SELECT Salary
-FROM (SELECT TOP 2 Salary
-    FROM [dbo].[Employee position2]
-    ORDER BY Salary ASC) AS MinSalaries
-```
+  SELECT 
+  dteday,
+  season,
+  a.yr,
+  weekday,
+  hr,
+  rider_type,
+  riders,
+  price,
+  COGS,
+  riders*price as revenue,
+  riders*(price - COGS) as profit
 
-## Findings
+FROM
+  cte_table a
+  LEFT JOIN cost_table b
+  ON a.yr = b.yr;
+```
+### Power BI
+
+### Calculated Measures
+
+More exploratory analysis was done in Power BI using DAX to generate calculated measures 
+
+
+## Key Insights
 
 - **Business Performance Overview**: The Toman Bike Share dashboard reveals strong profitability with a revenue of £15M, profit of £10.45M, and a profit margin of 0.69. A total of 3 million riders were recorded, indicating high service utilization and operational efficiency.
 - **Seasonal Revenue Trends**: Revenue distribution across seasons shows Season 3 as the most profitable (£4.9M), followed by Season 2 (£4.2M), Season 4 (£3.9M), and Season 1 (£2.2M). This highlights seasonal demand fluctuations, useful for resource planning and promotional targeting.

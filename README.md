@@ -72,13 +72,67 @@ FROM
 ### Power BI
 <img src="images/Toman Dashboard.png" alt="Toman Bikes dashboard overview">
 
+The Toman Bike KPI Analysis Dashboard was built using SQL and Power BI to provide a clear, data‑driven view of the company’s financial performance, rider behaviour, and operational trends. The dashboard brings together key metrics such as revenue, profit, rider volume, seasonal patterns, and hourly sales to support strategic decision‑making and pricing recommendations. It highlights year‑on‑year growth, customer demographics, and demand sensitivity, enabling leadership to plan effectively for future pricing and service improvements.
+
+#### 1. Key Performance Indicators (KPIs)
+Metrics Displayed: Profit Margin (0.69), Revenue (£15M), Profit (£10.45M), Riders (3M)
+These cards provide an instant snapshot of business performance. They highlight strong profitability and high rider engagement, giving stakeholders a quick understanding of overall financial health.
+
+#### 2. KPI Trends Over Time
+Metrics: Sum of Riders, Average Profit, Average Revenue
+This visual tracks monthly performance across 2021–2022. It reveals growth patterns, seasonal dips, and periods of accelerated demand. The combination of bars and lines makes it easy to compare rider volume against financial performance.
+
+#### 3. Seasonal Revenue Chart
+This chart highlights clear seasonal demand cycles, showing when revenue peaks and when it slows. Season 3 emerges as the strongest period with £4.9M, followed by Season 2 at £4.2M. Season 4 and Season 1 follow with £3.9M and £2.2M rspectively.
+
+#### 4. Rider Demographics
+Breakdown:
+- Registered Riders: 81.17%
+- Casual Riders: 18.83%
+This visual shows that the majority of users are registered members, indicating strong customer loyalty and the effectiveness of membership programs.
+
+#### 5. Hourly Sales Matrix Table
+Sales are highest between 10:00AM and 6:00PM, with Wednesdays and Fridays showing the strongest performance.
+The conditioanl formatting highlights profitable hours and days, helping optimize bike availability, staffing, and targeted promotions
+
+
+
 ### Calculated Measures
 <img src="images/Toman Tables.png" alt="Calculated Measures">
 
-More exploratory analysis was done in Power BI using DAX to generate calculated measures such as:
-- Price Increase:
-- Demand Increase:
-- Price Elasticity:
+More exploratory analysis was done in Power BI using DAX to generate calculated measures.
+
+Yearly Comparison Table (2021 vs 2022)
+The yearly comparison table provides a clear view of how Toman Bike Share’s performance evolved between 2021 and 2022, highlighting substantial growth across all major metrics.
+1. Rider Growth
+- 2021: 1,243,103 riders
+- 2022: 2,049,576 riders
+- Increase: +65%
+This sharp rise in riders indicates a significant surge in demand, suggesting improved service adoption, stronger customer engagement, and potentially successful marketing or operational improvements.
+
+2. Revenue Growth
+- 2021: £4.96M
+- 2022: £10.23M
+- Increase: +106%
+Revenue more than doubled year‑on‑year. This growth outpaced the increase in riders, showing that higher pricing and increased usage both contributed meaningfully to revenue expansion.
+
+3. Profit Growth
+- 2021: £3.42M
+- 2022: £7.03M
+- Increase: +105%
+Profit growth closely mirrors revenue growth, indicating that cost structures remained stable and the business scaled efficiently. This reinforces the strong operational performance of the bike share system.
+
+4. Average Price Increase
+- 2021: £3.99
+- 2022: £4.99
+- Increase: +25%
+The company raised prices by £1.00, representing a 25% increase. Despite this, demand still rose significantly, which is unusual in typical price‑demand relationships and signals possible strong customer willingness to pay.
+
+5. Price Elasticity of Demand
+- Price Increase: 25%
+- Demand Increase: 65%
+- Elasticity: 2.59
+A price elasticity of 2.59 indicates highly elastic demand—meaning customers responded strongly to price changes.
 
 
 ## Key Insights

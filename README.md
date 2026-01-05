@@ -3,9 +3,8 @@ Sales KPI Analysis
 ## Project Overview
 
 **Project Title**: Toman Bikes Sales KPI Analysis 
-**Database**:`SQL DB`
-**Tech Stack**: `SQL Server` `Power BI`
-**Tech Stack**: ![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white), ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black).
+**Database**:`Toman_Data`
+**Tech Stack**: ![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white), ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
 
 
 This project is designed to demonstrate SQL skills and techniques typically used by data analysts to explore, clean, and analyze employee data. The project involves setting up employee tables on an SQL database, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries.

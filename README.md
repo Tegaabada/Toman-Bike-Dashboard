@@ -21,39 +21,14 @@ This project showcases the use of SQL and Power BI to design and develop an inte
 
 ### 1. Database Setup
 
-- **Database Set up**: The project starts by setting up on an existing database created with this code
-  ``` CREATE DATABASE [Toman_Data]; ```
-- **Table Creation**: The tables, ```[Employee Info]``` and ```[Employee position2]``` were imported into the SQL server.
+- **Database Set up**: The project starts by setting up on a database.
+- **Table Creation**: The tables, were imported into the SQL server.
 
 
 ### 2. Data Cleaning
 
 - **Null Value Check**: View tables and check for any null values in the dataset and delete records with missing data.
 - **Datatype Check**: View tables and check datatype and alter columns with wrong datatypes.
-
-```sql
-USE [SQL DB]
-GO
-
-SELECT [EmpID]
-      ,[EmpFname]
-      ,[EmpLname]
-      ,[Department]
-      ,[Project]
-      ,[Address]
-      ,[DOB]
-      ,[Gender]
-  FROM [dbo].['Employee Info$']
-
-GO
-
-
-DELETE FROM [dbo].['Employee Info$']
-WHERE GENDER IS NULL;
-
-ALTER TABLE [dbo].['Employee Info$']
-alter column DOB DATE;
-```
 
 ### 3. Exploratory Data Analysis & Findings
 
@@ -77,17 +52,28 @@ SELECT Salary
 FROM (SELECT TOP 2 Salary
     FROM [dbo].[Employee position2]
     ORDER BY Salary ASC) AS MinSalaries
-
-
 ```
 
 ## Findings
 
-- **Employee Demographics**: The dataset captures employees with details such as names, DOB, gender, department, and address. Gender distribution can be analyzed and DOB ranges show employees born between 1970–1995, allowing age-group segmentation.
-- **Departmental Insights**: The analysis shows department-wise counts, highlighting HR and other departments’ workforce sizes. Sorting by department count reveals which departments are most/least staffed.
-- **Position & Salary Analysis**: Managerial roles are identifiable, enabling leadership headcount reporting. Salary ranges highlight employees earning between 50,000–100,000 as the min/max salary bands. Top earners can be extracted, useful for compensation benchmarking.
-- **Employee Trends**: Employees with DateOfJoining not null show active workforce.
+- **Business Performance Overview**: The Toman Bike Share dashboard reveals strong profitability with a revenue of £15M, profit of £10.45M, and a profit margin of 0.69. A total of 3 million riders were recorded, indicating high service utilization and operational efficiency.
+- **Seasonal Revenue Trends**: Revenue distribution across seasons shows Season 3 as the most profitable (£4.9M), followed by Season 2 (£4.2M), Season 4 (£3.9M), and Season 1 (£2.2M). This highlights seasonal demand fluctuations, useful for resource planning and promotional targeting.
+- **Rider Demographics**: The rider base is predominantly registered users (81.17%) compared to casual riders (18.83%), suggesting strong customer retention and membership engagement.
+- **Hourly Sales Insights**: Sales are highest between 10:00AM and 6:00PM, with Wednesday and Friday showing peak profitability. This pattern supports targeted scheduling, staffing, and marketing during high-demand periods
+- **Year-on-Year Growth & Pricing Impact**: From 2021 to 2022, rider demand increased by 65% while average price rose by 25%, resulting in a price elasticity of 2.59. This indicates that demand is highly responsive to pricing changes, supporting potential price adjustments in future strategy.
 
+## Recommendation
+
+Conservative Increase: Considering the substantial increase last year, a more conservative increase might be prudent to avoid hitting a price ceiling where demand starts to drop. An increase in the range of 10-15% could test the market's response without risking a significant loss of customers.
+
+Price Setting:
+* If the price in 2022 was £4.99, a 10% increase would make the new price about £5.49.
+* A 15% increase would set the price at approximately £5.74.
+
+Recommended Strategy:
+Market Analysis: Conduct further market research to understand customer satisfaction, potential competitive changes, and the overall economic environment. This can guide whether leaning towards the lower or higher end of the suggested increase.
+Segmented Pricing Strategy: Consider different pricing for casual versus registered users, as they may have different price sensitivities.
+Monitor and Adjust: Implement the new prices but be ready to adjust based on immediate customer feedback and sales data. Monitoring closely will allow you to fine-tune your pricing strategy without committing fully to a price that might turn out to be too high.
 
 
 ## Conclusion

@@ -12,7 +12,7 @@ This project showcases the use of SQL and Power BI to design and develop an inte
 
 ## Objectives
 
-1. **Set up a database**: Populate a database with the provided Toman BIke Sales data.
+1. **Set up a database**: Populate a database with the provided Toman Bike Sales data.
 2. **Data Cleaning**: Perform necessary data cleaning practises such as: Identifying and removing any records with null values and using the proper datatypes.
 3. **Exploratory Data Analysis (EDA)**: Perform basic exploratory data analysis to understand the dataset.
 4. **Business Analysis**: Use SQL and DAX to answer specific business questions and derive insights from the dataset.

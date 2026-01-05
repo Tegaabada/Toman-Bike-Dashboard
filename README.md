@@ -69,7 +69,7 @@ FROM
   LEFT JOIN cost_table b
   ON a.yr = b.yr;
 ```
-### Power BI
+### Power BI Dashboard
 <img src="images/Toman Dashboard.png" alt="Toman Bikes dashboard overview">
 
 The Toman Bike KPI Analysis Dashboard was built using SQL and Power BI to provide a clear, data‑driven view of the company’s financial performance, rider behaviour, and operational trends. The dashboard brings together key metrics such as revenue, profit, rider volume, seasonal patterns, and hourly sales to support strategic decision‑making and pricing recommendations. It highlights year‑on‑year growth, customer demographics, and demand sensitivity, enabling leadership to plan effectively for future pricing and service improvements.

@@ -10,7 +10,7 @@ Sales KPI Analysis
 
 This project showcases the use of SQL and Power BI to design and develop an interactive dashboard for Toman Bike Share. It involves creating or accessing a bike‑share database, analyzing hourly revenue, seasonal profit trends, and rider demographics, and presenting these insights through a user‑friendly, brand‑aligned dashboard. The work supports data‑driven decision‑making and includes recommendations on pricing strategy for the upcoming year.
 
-##Outline
+## Outline
 -	Objectives
 -	Analysis
 -	Key Insights

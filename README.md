@@ -159,14 +159,14 @@ Monitor and Adjust: Implement the new prices but be ready to adjust based on imm
 
 ## Conclusion
 
-This project demonstrates how SQL can be applied to database setup, data cleaning, and exploratory analysis using employee information. By working with the EmployeeInfo and EmployeePosition2 tables, we were able to:
-- Standardize and clean data (removing nulls, formatting DOB, parsing addresses).
-- Generate demographic insights such as gender distribution, age ranges, and departmental counts.
-- Explore organizational structure by identifying managerial roles and department staffing levels.
-- Analyze salary trends, including ranges, top earners, and employees within specific pay bands.
-- Retrieve targeted employee details using conditions on names, addresses, and joining dates.
+This project demonstrates how SQL and Power BI can be applied to data modeling, performance analysis, and strategic decision‑making for a bike‑share business. By working with yearly rider, revenue, and pricing data, we were able to:
+- Build a clean analytical dataset for comparing performance across 2021 and 2022.
+- Analyze key financial metrics including revenue, profit, profit margin, and rider volume.
+- Identify seasonal and hourly demand patterns to understand when the service performs best.
+- Explore rider demographics, highlighting the dominance of registered users over casual riders.
+- Evaluate the impact of pricing changes through demand growth, price increase percentages, and elasticity calculations.
+- Develop data‑driven pricing recommendations based on customer responsiveness and business growth trends.
 
-Overall, the exercise highlights how SQL queries can uncover meaningful workforce insights, support HR reporting, and provide a foundation for business-driven decision making.
-
+Overall, the analysis highlights how SQL and Power BI can uncover meaningful operational insights, support pricing strategy, and provide a strong foundation for data‑driven decision‑making within the Toman Bike Share service.
 
 #### Author - Tega Abada
